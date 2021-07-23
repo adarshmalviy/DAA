@@ -14,8 +14,6 @@ for i in range(int(input())):
     n = int(input("enter n"))
     x = input("enter numbers with space\n").split()
     s = input("enter number to search")
-    l=0
-    r=n-1
     res = search(x, s, 0, len(x)-1)
 
     if res!=-1:
