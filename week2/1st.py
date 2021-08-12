@@ -69,5 +69,5 @@ for i in range(int(input())):
     # result  = search(array,find,0,len(array)-1)
     f1 = findFirstOccurrence(array, find)
     f2 = findLastOccurrence(array, find)
-    print(f2-f1+1)
+    print(find,"-",f2-f1+1)
 

@@ -1,6 +1,6 @@
 def search(x, s , l ,r):
-    if l<=r:
-        mid =  l+(r-l)//2
+    while l<=r:
+        mid =  l+r//2
         if x[mid] == s:
             return mid;
         elif x[mid]>s:
@@ -11,13 +11,13 @@ def search(x, s , l ,r):
     return -1
 
 for i in range(int(input())):
-    n = int(input("enter n"))
+    # n = int(input("enter n"))
     x = input("enter numbers with space\n").split()
     s = input("enter number to search")
     res = search(x, s, 0, len(x)-1)
 
     if res!=-1:
-        print("number is present at index %d" % res+1)
+        print("number is present at index " , res+1)
     else:
         print("number is not present ")
 
